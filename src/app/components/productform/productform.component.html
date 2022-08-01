@@ -1,0 +1,65 @@
+<div class="container">
+   
+    <br>
+    <div class="row">
+        <h4>Product Form</h4>
+    </div>
+    &nbsp;
+    <form #product="ngForm" (ngSubmit)="onSubmit()">
+
+        &nbsp;
+        <div class="row">
+            <div class="col-sm-3"><label for="">Product name</label></div>
+            <div class="col-sm-6"><input type="text" name="proname" [(ngModel)]=formModel.proname></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col-sm-3"><label for="">Description</label></div>
+            <div class="col-sm-6"><input type="text" name="description" [(ngModel)]=formModel.description></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col-sm-3"><label for="">Unit Price</label></div>
+            <div class="col-sm-6"><input type="number" name="unitprice" [(ngModel)]=formModel.unitprice></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col-sm-3"><label for="">Image URL</label></div>
+            <div class="col-sm-6"><input type="text" name="imageurl"[(ngModel)]=formModel.imageurl></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col-sm-3"><label for="">Units In Stock</label></div>
+            <div class="col-sm-6"><input type="number" name="unitsinstock" [(ngModel)]=formModel.unitsinstock></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col-sm-3"><label for="">Date Created</label></div>
+            <div class="col-sm-6"><input type="date" name="datecreated" [(ngModel)]=formModel.datecreated></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col-sm-3"><label for="">Last Upadated</label></div>
+            <div class="col-sm-6"><input type="date" name="lastupdated" [(ngModel)]=formModel.lastupdated></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col-sm-3"><label for="">Category Id</label></div>
+            <div class="col-sm-6"><input type="number" name="categoryid" [(ngModel)]=formModel.categoryid></div>
+        </div>
+        &nbsp;
+       
+
+        <div class="row">
+            <div class="col-sm-3"><button type="submit" class="btn btn-success">submit</button></div>
+            <div class="col-sm-3"><button type="reset">Reset</button></div>
+        </div>
+    </form>
+    &nbsp;
+
+    <div class="row">
+        <div class="col-auto"><a routerLink="/products" class="btn btn-success">Product List</a></div>
+        <div class="col-sm-3"><a routerLink="" class="btn btn-success">Home</a></div>
+    
+    </div>
+</div>

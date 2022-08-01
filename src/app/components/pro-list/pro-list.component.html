@@ -1,0 +1,38 @@
+<div class="container" style="margin-top: 50px;">
+    
+    <h4>List of Products</h4>
+    &nbsp;
+    <table class="table  table-bordered table-stripped " border="solid">
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Unit Price</th>
+            <th>Image</th>
+            <th>Units IN stock</th>
+            <th>Date Created</th>
+            <th>Last Updated</th>
+            <th>Category Id</th>
+        </tr>
+
+        <tr *ngFor="let pro of products" >
+            <td>{{pro.id}}</td>
+            <td>{{pro.proname}}</td>
+            <td>{{pro.description}}</td>
+            <td>{{pro.unitprice }}</td>
+            <td><img src='{{pro.imageurl}}' width="100" height="100"></td>
+            <td>{{pro.unitsinstock}}</td>
+            <td>{{pro.datecreated}}</td>
+            <td>{{pro.lastupdated}}</td>
+            <td>{{pro.categoryid}}</td>
+
+        </tr>
+    </table>
+    <div>
+        <a type="button" routerLink="/productform" class="btn btn-success">Add Product</a>
+
+        &nbsp;
+        &nbsp;
+        <a routerLink="" type="button" class="btn btn-success">Home</a>
+        <br></div>
+</div>>
